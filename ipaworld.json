@@ -1,128 +1,16 @@
 [
   {
     "name": "Boom Castle",
-    "bundle_id": "castle.heroes.tower.defense.kingdom.magic.battle.archer",
+    "bundleId": "castle.heroes.tower.defense.kingdom.magic.battle.archer",
     "version": "1.5.2",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/35/c9/5e/35c95e70-db4d-c7d9-a0d4-3fef74edccff/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/BOOM+Castle+_1.5.2_1752890545.ipa",
-    "description": "Hack Features\n- Enemy Status [ HP DEF ]\n- Base HP \n- Battle Cost 0 \n- Stage Unlocked [ Play Any Stage ]\n- Battle Pass Unlocked \n- Battle Pass Claim Unlimited [ Gems Gold ]\n- iGG Speed Hack Max 0 - 10 [ Skill CD - ATK Speed - Animation Speed - Wave Faster ]",
-    "size": "206 MB"
+    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/BOOM+Castle+_1.5.2_1752890545.ipa"
   },
   {
     "name": "Zombie Infinity",
-    "bundle_id": "jp.kamasu.oread",
+    "bundleId": "jp.kamasu.oread",
     "version": "1.9.1",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/9f/f4/c3/9ff4c3aa-55ec-4e6d-9fd9-131a636921dd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Zombie+Infinity+_1.9.1_1752890971.ipa",
-    "description": "Hack Features\n- ADS Pass\n- Energy Pass\n- Premium Pass\n- Currency\n- Hero Status [ HP - DMG ]",
-    "size": "409 MB"
-  },
-  {
-    "name": "Gear Hill Customs",
-    "bundle_id": "com.ssggamestudio.resourcemerge",
-    "version": "2025.7.371",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/82/9b/4b/829b4bd7-e165-3d55-5037-fac974e40034/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Gear+Hill+Customs+_2025.7.371_1752894097.ipa",
-    "description": "Hack Features\n- Gems [ Buy Energy Disable After Unlimited ]\n- Cash [ Quest rewards ]\n- Energy Cost 0\n- Resources Cost 0\n- Stock Unlimted",
-    "size": "228 MB"
-  },
-  {
-    "name": "Merge Cruise",
-    "bundle_id": "com.peerplay.megamerge",
-    "version": "0.36.380",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d8/b6/5b/d8b65b40-e6f3-258b-f1cb-737a4129e840/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Merge+Cruise+_0.36.380_1752894547.ipa",
-    "description": "Hack Features:\n- Cash\n- Energy",
-    "size": "696 MB"
-  },
-  {
-    "name": "Candy Pop Story",
-    "bundle_id": "com.gamoper.candysweetstory.ios",
-    "version": "1.23.0722",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/81/7f/01/817f01b4-6441-4d13-4111-79f81e77ea83/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/candy+pop+story_1.23.0722_1752896323.ipa",
-    "description": "Hack Features\n- Auto Win\n- Coins\n- Moves",
-    "size": "130 MB"
-  },
-  {
-    "name": "Asphalt 8",
-    "bundle_id": "com.gameloft.asphalt8arcade",
-    "version": "2.5.0",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/7d/3a/947d3a42-e16d-82c5-d8bb-dad3cd49b644/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Asphalt+8%2B+_2.5.0_1752899836.ipa",
-    "description": "Hack Features:\n- No Car Crash\n- Infinite Nitro\n- No Speed Limit\n- All Cars Unlocked",
-    "size": "2500 MB"
-  },
-  {
-    "name": "Suret - AI Art Generator",
-    "bundle_id": "com.idevtal.Wallpapers",
-    "version": "5.82",
-    "icon": "https://github.com/iPAGroove/iPAGroove/blob/main/icons/IMG_7213.jpeg?raw=true",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Suret_5.82_1752924235.ipa",
-    "description": "Premium Unlocked",
-    "size": "94 MB"
-  },
-  {
-    "name": "Minions World",
-    "bundle_id": "com.mikapps.minionsconquest",
-    "version": "1.1.4",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/73/1c/f1/731cf1ed-e175-77dd-f5eb-36a3f3dba310/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Minions+World+_1.1.4_1752942557.ipa",
-    "description": "Hack Features\n- Gems\n- Gold\n- Energy\n- Keys",
-    "size": "181 MB"
-  },
-  {
-    "name": "Gangstar Vegas",
-    "bundle_id": "com.gameloft.gangstar4",
-    "version": "851",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/97/0f/08/970f0882-a840-ec9a-fb3c-f1d98f4562c8/AppIcon-1x_U007emarketing-0-10-0-0-85-220-0.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Gangstar+IV+_8.5.1_1752943263.ipa",
-    "description": "Hack Features:\n- Infinite Currencies\n- Infinite Ammo / No Reload ( Required re-launching the game after purchasing new gun and enabled in menu before load into the game )\n- No Cops",
-    "size": "2300 MB"
-  },
-  {
-    "name": "Castle Smaaash!",
-    "bundle_id": "com.onicore.minion.III",
-    "version": "1.0",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/80/5b/57805b7d-3499-1330-c9fc-44a022958a44/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Castle+Smaaash!_1.0.5_1752990809.ipa",
-    "description": "Hack Features:\n- Never Die (Units)\n- Always Max Tower Health\n- Free Talent Upgrade\n- Add Battle Coin (Enable inside battle)",
-    "size": "66 MB"
-  },
-  {
-    "name": "Town Guardians",
-    "bundle_id": "com.epixelgames.townguardians",
-    "version": "1.0.6",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4f/c4/86/4fc486f8-bb72-cc14-ad04-25ff108215f1/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Town+Guardians+_1.0.6_1752991484.ipa",
-    "description": "Hack Features\n- Damage Multiplier\n- Defense Multiplier\n- Attack Speed Multiplier\n- Loot/Drop/Rewards Multiplier",
-    "size": "153 MB"
-  },
-  {
-    "name": "Empire Heroes",
-    "bundle_id": "com.nature.empireheroes",
-    "version": "1.1.4",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/04/a9/78/04a978d2-ea95-5215-6fb0-2f1463eaeb97/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Empire+Heroes+_1.1.4_1752992188.ipa",
-    "description": "Hack Features\n- Unlimited Coins\n- Unlimited Gems\n- Free IAP\n- Higher Food Gain",
-    "size": "117 MB"
-  },
-  {
-    "name": "Hammer & Steel",
-    "bundle_id": "hammer.and.steel.business.game",
-    "version": "0.14.1",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/55/88/91/55889141-a19d-92b6-b02a-4962636e5cf0/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Hammer+%26+Steel_0.14.1_1752992735.ipa",
-    "description": "Hack Features:\n- Free IAP\n- Add Gold\n- Add Ore (Use it after tutorial)\n- No Fatique \n- No Satiety",
-    "size": "113 MB"
-  },
-  {
-    "name": "Ace Fishing",
-    "bundle_id": "com.com2us.acefishing.normal.freefull.apple.global.ios.universal",
-    "version": "9.7.0",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b8/37/15/b83715ba-8eb9-c2e7-5d36-dce8fac140f6/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.jpg",
-    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Ace+Fishing+_90700_1752994517.ipa",
-    "description": "Hack Features:\n- Easy Catch",
-    "size": "113 MB"
+    "url": "https://vhistoretg.s3.eu-north-1.amazonaws.com/Zombie+Infinity+_1.9.1_1752890971.ipa"
   }
 ]
