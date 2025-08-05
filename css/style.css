@@ -8,6 +8,8 @@ body {
     background-size: cover; /* Растягиваем, чтобы покрыть всю область */
     background-position: center; /* Центрируем картинку */
     background-attachment: fixed; /* Фиксируем картинку при скролле */
+    /* Убираем прокрутку */
+    overflow-y: hidden; 
     color: #fff;
     display: flex;
     flex-direction: column;
