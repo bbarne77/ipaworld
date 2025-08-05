@@ -23,17 +23,13 @@ header {
     backdrop-filter: saturate(180%) blur(10px);
     -webkit-backdrop-filter: saturate(180%) blur(10px);
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    /* Располагаем элементы в один ряд по центру */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Отступ между иконкой и названием */
+    gap: 10px;
     z-index: 1000;
     padding: 0 15px;
-    /* Анимация появления */
-    opacity: 0;
-    animation: fade-in 1s forwards 0.5s;
     /* Визуальная коррекция: сдвигаем шапку чуть влево */
     transform: translateX(-4px); 
 }
@@ -44,6 +40,9 @@ header img.logo {
     border-radius: 12px;
     user-select: none;
     margin-bottom: 0;
+    /* Новая анимация для иконки */
+    opacity: 0;
+    animation: slide-and-fade 0.6s forwards 0.5s; /* Появится первой с задержкой 0.5s */
 }
 
 header .title {
@@ -53,6 +52,9 @@ header .title {
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     user-select: none;
     white-space: nowrap;
+    /* Новая анимация для названия */
+    opacity: 0;
+    animation: slide-and-fade 0.6s forwards 0.7s; /* Появится второй с задержкой 0.7s */
 }
 
 /* --- Текст под шапкой --- */
@@ -179,11 +181,11 @@ main.container {
     user-select: none;
 }
 
-/* --- Ключевые кадры для анимации появления --- */
-@keyframes fade-in {
+/* --- Ключевые кадры для новой анимации --- */
+@keyframes slide-and-fade {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(10px);
     }
     to {
         opacity: 1;
