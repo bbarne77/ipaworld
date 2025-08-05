@@ -51,7 +51,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 16px;
+  padding: 14px 14px 12px 14px;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
               inset 0 0 8px rgba(255, 255, 255, 0.05);
@@ -65,29 +65,29 @@
 }
 
 .card h3 {
-  margin: 0 0 6px;
+  margin: 0 0 4px 0;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 13.5px;
   opacity: 0.9;
-  margin: 0 0 10px;
+  margin: 0 0 6px 0;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 .card-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 0;
+  margin-top: 2px;
 }
 
 .card-price {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #00ffe0;
 }
@@ -96,12 +96,12 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  padding: 6px 14px;
+  padding: 6px 12px;
   background: linear-gradient(135deg, #00c6ff, #0072ff);
   border: none;
   border-radius: 8px;
   color: #fff;
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 500;
   text-decoration: none;
   transition: transform 0.2s ease;
