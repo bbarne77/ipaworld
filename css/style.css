@@ -23,12 +23,12 @@ header {
     backdrop-filter: saturate(180%) blur(10px);
     -webkit-backdrop-filter: saturate(180%) blur(10px);
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    /* Центрируем элементы внутри шапки */
+    /* Теперь располагаем элементы в один ряд по центру */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5px; /* Устанавливаем зазор между иконкой и названием */
+    gap: 10px; /* Увеличим отступ между иконкой и названием */
     z-index: 1000;
     padding: 0 15px;
     /* Анимация появления */
@@ -41,7 +41,6 @@ header img.logo {
     width: auto;
     border-radius: 12px;
     user-select: none;
-    /* Убираем старый отступ, т.к. теперь используем gap */
     margin-bottom: 0;
 }
 
