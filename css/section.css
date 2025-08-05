@@ -24,10 +24,12 @@
 /* Прокрутка карточек */
 .card-scroll {
   margin-top: 20px;
-  padding: 0 16px;
+  padding-left: 24px; /* ✅ Отступ слева */
+  padding-right: 16px;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-padding-left: 24px; /* ✅ scroll начинается не от края */
   gap: 16px;
   -webkit-overflow-scrolling: touch;
   animation: fadeInUp 1.3s ease-out forwards;
@@ -68,13 +70,7 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
-/* Отступ слева от первой карточки */
-.card-spacer {
-  min-width: 8px;
-  flex-shrink: 0;
-}
-
-/* ===== Анимации ===== */
+/* Анимация появления */
 @keyframes fadeInUp {
   0% {
     transform: translateY(30px);
