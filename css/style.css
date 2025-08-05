@@ -5,7 +5,8 @@ body {
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     /* Устанавливаем фоновую картинку */
     background-image: url('https://raw.githubusercontent.com/bbarne77/ipaworld/main/IMG_7628.JPG');
-    background-size: cover; /* Растягиваем, чтобы покрыть всю область */
+    background-size: contain; /* Изменили на contain, чтобы вся картинка помещалась на экране */
+    background-repeat: no-repeat; /* Убираем повторение, если картинка не заполняет весь экран */
     background-position: center; /* Центрируем картинку */
     background-attachment: fixed; /* Фиксируем картинку при скролле */
     /* Убираем прокрутку */
