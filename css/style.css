@@ -8,15 +8,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
-    padding-top: 70px; /* Отступ под шапку */
+    padding-top: 70px;
 
-    /* НОВЫЕ СТИЛИ для фона и устранения прокрутки */
-    background-image: url('https://github.com/viibbee/Info/blob/main/IMG_5410.PNG?raw=true');
+    /* Стили для фонового изображения */
+    background-image: url('СЮДА НУЖНО ВСТАВИТЬ ПРАВИЛЬНУЮ ССЫЛКУ НА ФОНОВУЮ КАРТИНКУ'); 
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Для красивого эффекта параллакса */
-    overflow-x: hidden; /* ГЛАВНАЯ ПРАВКА: убираем горизонтальную прокрутку */
+    background-attachment: fixed; /* Контент будет прокручиваться поверх статичного фона */
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
 }
 
 /* --- Шапка --- */
@@ -30,7 +30,7 @@ header {
     backdrop-filter: saturate(180%) blur(10px);
     -webkit-backdrop-filter: saturate(180%) blur(10px);
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    /* Теперь располагаем элементы в один ряд по центру */
+    /* Располагаем элементы в один ряд по центру */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -41,7 +41,6 @@ header {
     /* Анимация появления */
     opacity: 0;
     animation: fade-in 1s forwards 0.5s;
-    /* Убираем смещение, так как горизонтальный макет сбалансирован */
     transform: none; 
 }
 
