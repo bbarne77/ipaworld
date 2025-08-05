@@ -143,3 +143,36 @@
     opacity: 1;
   }
 }
+.guarantee-bar {
+  width: 100%;
+  height: 38px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+  margin-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  box-shadow: inset 0 0 8px rgba(255,255,255,0.1);
+}
+
+.guarantee-text {
+  position: absolute;
+  white-space: nowrap;
+  display: inline-block;
+  animation: scrollText 12s linear infinite;
+  font-size: 15px;
+  font-weight: 600;
+  padding-left: 100%;
+  color: #00ff99;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
