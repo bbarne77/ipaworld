@@ -42,7 +42,7 @@
 .card {
   min-width: 260px;
   max-width: 260px;
-  height: 180px; /* уменьшено */
+  height: 180px;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
@@ -56,7 +56,7 @@
               inset 0 0 8px rgba(255, 255, 255, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: #fff;
-  gap: 6px;
+  justify-content: space-between;
 }
 
 .card:active {
@@ -64,18 +64,25 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
-.card h3 {
-  margin: 0 0 4px 0;
-  font-size: 16px;
-  font-weight: 600;
+/* Новый контейнер для названия и описания */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  gap: 4px;
 }
 
-.card p {
+.card-content h3 {
+  margin: 0;
+  font-size: 19px; /* увеличен размер названия */
+  font-weight: 600;
+}
+
+.card-content p {
   font-size: 13px;
   opacity: 0.9;
-  margin: 0 0 6px 0;
-  text-align: center;
+  margin: 0;
   line-height: 1.3;
 }
 
@@ -83,7 +90,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: auto;
+  margin-top: 0; /* убран отступ */
 }
 
 .card-price {
