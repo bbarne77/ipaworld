@@ -9,7 +9,7 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  overflow: hidden; /* Без прокрутки */
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -21,11 +21,12 @@ body {
   background-repeat: no-repeat;
 }
 
-/* Прозрачный слой для контента */
+/* Прозрачный слой для интерфейса — больше не затемняет фон */
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* затемнение по вкусу */
+  /* Убрал затемнение */
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
