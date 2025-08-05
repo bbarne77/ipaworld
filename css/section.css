@@ -1,12 +1,19 @@
 /* Заголовок секции */
 .section-title {
-  margin-top: 64px;
+  margin-top: 72px;
   text-align: center;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+.section-title h2 {
+  font-size: 26px;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(0, 198, 255, 0.5);
   letter-spacing: 1px;
-  text-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
 }
 
 /* Прокрутка карточек */
@@ -18,13 +25,16 @@
   scroll-snap-type: x mandatory;
   gap: 16px;
   -webkit-overflow-scrolling: touch;
+  animation: fadeInUp 1.3s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
 }
 
 .card-scroll::-webkit-scrollbar {
   display: none;
 }
 
-/* Прямоугольные "окна"-карточки */
+/* Прямоугольные карточки-окна */
 .card {
   min-width: 260px;
   height: 160px;
@@ -51,4 +61,17 @@
 .card:active {
   transform: scale(0.97);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Анимации ===== */
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
