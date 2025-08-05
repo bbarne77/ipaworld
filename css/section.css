@@ -59,24 +59,37 @@
   justify-content: space-between;
 }
 
-.card:active {
-  transform: scale(0.97);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+/* Заголовок с линиями */
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 6px;
 }
 
-/* Новый контейнер для названия и описания */
+.card-header::before,
+.card-header::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-header h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* Контент с описанием */
 .card-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 4px;
-}
-
-.card-content h3 {
-  margin: 0;
-  font-size: 19px; /* увеличен размер названия */
-  font-weight: 600;
 }
 
 .card-content p {
@@ -90,7 +103,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 0; /* убран отступ */
+  margin-top: 0;
 }
 
 .card-price {
