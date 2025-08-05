@@ -3,13 +3,17 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background: linear-gradient(135deg, #7ec8f5, #4a90e2);
+    /* Устанавливаем фоновую картинку */
+    background-image: url('https://raw.githubusercontent.com/bbarne77/ipaworld/main/IMG_7628.JPG');
+    background-size: cover; /* Растягиваем, чтобы покрыть всю область */
+    background-position: center; /* Центрируем картинку */
+    background-attachment: fixed; /* Фиксируем картинку при скролле */
     color: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
-    padding-top: 80px; /* Увеличили отступ под шапку */
+    padding-top: 80px; /* Отступ под шапку */
 }
 
 /* --- Шапка --- */
@@ -18,27 +22,27 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px; /* Увеличили высоту шапки */
-    background: linear-gradient(135deg, rgba(41, 128, 185, 0.95), rgba(63, 141, 209, 0.95)); /* Добавили градиент */
-    backdrop-filter: saturate(180%) blur(12px); /* Усилили размытие */
+    height: 80px;
+    background: linear-gradient(135deg, rgba(41, 128, 185, 0.95), rgba(63, 141, 209, 0.95));
+    backdrop-filter: saturate(180%) blur(12px);
     -webkit-backdrop-filter: saturate(180%) blur(12px);
     box-shadow: 
-        0 4px 15px rgba(0, 0, 0, 0.4), /* Внешняя тень для эффекта парения */
-        inset 0 -2px 5px rgba(255, 255, 255, 0.2); /* Внутренняя тень для объема */
+        0 4px 15px rgba(0, 0, 0, 0.4),
+        inset 0 -2px 5px rgba(255, 255, 255, 0.2);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 12px; /* Увеличили отступ между иконкой и названием */
+    gap: 12px;
     z-index: 1000;
     padding: 0 15px;
     transform: translateX(-4px); 
 }
 
 header img.logo {
-    height: 50px; /* Увеличили размер иконки */
+    height: 50px;
     width: auto;
-    border-radius: 14px; /* Немного скруглили углы */
+    border-radius: 14px;
     user-select: none;
     margin-bottom: 0;
     opacity: 0;
@@ -47,7 +51,7 @@ header img.logo {
 
 header .title {
     font-weight: 700;
-    font-size: 1.6rem; /* Увеличили размер шрифта */
+    font-size: 1.6rem;
     color: #e3f2fd;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     user-select: none;
