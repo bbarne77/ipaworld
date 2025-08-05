@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
-    padding-top: 70px; /* Отступ под шапку */
+    padding-top: 80px; /* Увеличили отступ под шапку */
 }
 
 /* --- Шапка --- */
@@ -18,43 +18,42 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
-    background: rgba(41, 128, 185, 0.9);
-    backdrop-filter: saturate(180%) blur(10px);
-    -webkit-backdrop-filter: saturate(180%) blur(10px);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    height: 80px; /* Увеличили высоту шапки */
+    background: linear-gradient(135deg, rgba(41, 128, 185, 0.95), rgba(63, 141, 209, 0.95)); /* Добавили градиент */
+    backdrop-filter: saturate(180%) blur(12px); /* Усилили размытие */
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.4), /* Внешняя тень для эффекта парения */
+        inset 0 -2px 5px rgba(255, 255, 255, 0.2); /* Внутренняя тень для объема */
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 12px; /* Увеличили отступ между иконкой и названием */
     z-index: 1000;
     padding: 0 15px;
-    /* Визуальная коррекция: сдвигаем шапку чуть влево */
     transform: translateX(-4px); 
 }
 
 header img.logo {
-    height: 44px;
+    height: 50px; /* Увеличили размер иконки */
     width: auto;
-    border-radius: 12px;
+    border-radius: 14px; /* Немного скруглили углы */
     user-select: none;
     margin-bottom: 0;
-    /* Новая анимация для иконки */
     opacity: 0;
-    animation: slide-and-fade 0.6s forwards 0.5s; /* Появится первой с задержкой 0.5s */
+    animation: slide-and-fade 0.6s forwards 0.5s;
 }
 
 header .title {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.6rem; /* Увеличили размер шрифта */
     color: #e3f2fd;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     user-select: none;
     white-space: nowrap;
-    /* Новая анимация для названия */
     opacity: 0;
-    animation: slide-and-fade 0.6s forwards 0.7s; /* Появится второй с задержкой 0.7s */
+    animation: slide-and-fade 0.6s forwards 0.7s;
 }
 
 /* --- Текст под шапкой --- */
