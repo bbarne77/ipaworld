@@ -42,7 +42,7 @@
 .card {
   min-width: 260px;
   max-width: 260px;
-  height: 220px;
+  height: 180px; /* уменьшено */
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
@@ -56,7 +56,7 @@
               inset 0 0 8px rgba(255, 255, 255, 0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: #fff;
-  gap: 6px; /* расстояние между элементами */
+  gap: 6px;
 }
 
 .card:active {
@@ -66,13 +66,13 @@
 
 .card h3 {
   margin: 0 0 4px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
 
 .card p {
-  font-size: 13.5px;
+  font-size: 13px;
   opacity: 0.9;
   margin: 0 0 6px 0;
   text-align: center;
@@ -83,11 +83,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2px;
+  margin-top: auto;
 }
 
 .card-price {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #00ffe0;
 }
