@@ -14,13 +14,13 @@ html, body {
 
 /* Градиентный фон */
 body {
-    background: linear-gradient(135deg, #001f3f, #004080, #0072ff);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: normal;
-    filter: none !important;
+  background: linear-gradient(135deg, #001f3f, #004080, #0072ff);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: normal;
+  filter: none !important;
 }
 
 /* ===== Шапка ===== */
@@ -73,5 +73,36 @@ body {
   }
   50% {
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  }
+}
+
+/* Стили для карусели иконок */
+.icon-carousel-container {
+  width: 100%;
+  margin: 0 auto 16px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-carousel-image {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  display: inline-block;
+  vertical-align: middle;
+  animation: scrollIcons 20s linear infinite;
+}
+
+/* Анимация прокрутки */
+@keyframes scrollIcons {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
   }
 }
