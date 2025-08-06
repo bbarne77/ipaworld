@@ -130,18 +130,17 @@ body {
 /* ===== Футер ===== */
 .site-footer {
   width: 100%;
-  height: 44px;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(6px);
-  color: #ffffff;
+  height: 36px; /* ниже чем было */
+  background-color: #000000; /* чисто чёрный */
+  color: #ffffff; /* белый текст */
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   z-index: 998;
   position: relative;
   margin-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #222; /* еле заметная граница сверху */
 }
