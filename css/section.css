@@ -84,13 +84,19 @@
 }
 .card-content {
     text-align: center;
-    font-size: 14.5px;
-    line-height: 1.4;
+    font-size: 15px; /* Увеличенный размер шрифта */
+    line-height: 1.5; /* Увеличенный интерлиньяж */
     margin: 0;
-    padding: 4px 6px 8px;
+    padding: 8px 10px 12px; /* Увеличенные отступы */
     background: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
 }
+
+/* Добавляем стили для выделения текста в описании */
+.card-content p {
+    font-weight: 500;
+}
+
 .card-footer {
     display: flex;
     align-items: center;
