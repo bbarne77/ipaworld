@@ -293,7 +293,6 @@
   100% {
     transform: translateY(0);
   }
-}
 /* 📦 Стили для всплывающего меню */
 .popup-menu {
   position: fixed;
@@ -375,4 +374,5 @@
 
 .popup-menu a:active {
   transform: scale(0.98);
+}
 }
