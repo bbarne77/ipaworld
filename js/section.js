@@ -69,9 +69,12 @@ helpMenuButtons.forEach(button => {
     button.addEventListener('click', (event) => {
         event.preventDefault();
         const infoKey = button.getAttribute('data-info');
+        console.log(`Нажата кнопка с data-info: ${infoKey}`); // Отладочное сообщение
         if (infoContent[infoKey]) {
             showModal(infoContent[infoKey].title, infoContent[infoKey].text);
             helpMenu.classList.remove('show');
+        } else {
+            console.error(`Ошибка: Для ключа "${infoKey}" не найдено данных в infoContent.`);
         }
     });
 });
