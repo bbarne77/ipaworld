@@ -36,8 +36,8 @@
     display: none;
 }
 .card {
-    min-width: 280px; /* Увеличил ширину карточки */
-    max-width: 280px; /* Увеличил ширину карточки */
+    min-width: 280px;
+    max-width: 280px;
     height: 200px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -90,8 +90,8 @@
     padding: 8px 10px 12px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    min-height: 70px;
-    max-height: 70px;
+    min-height: 80px; /* Увеличил высоту контейнера */
+    max-height: 80px; /* Увеличил высоту контейнера */
 }
 
 /* Добавляем стили для выделения текста в описании */
