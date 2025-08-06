@@ -1,33 +1,22 @@
 // js/section.js
 
-// Создание и отображение кнопок при клике на пузырь "?"
-document.addEventListener('DOMContentLoaded', function () {
-  const helpBubble = document.querySelector('.help-bubble');
+// Находим кнопку с вопросом и меню
+const helpBubble = document.querySelector('.help-bubble');
+const helpMenu = document.getElementById('helpMenu');
 
-  // Контейнер для кнопок
-  const popup = document.createElement('div');
-  popup.classList.add('help-popup');
-  popup.style.display = 'none';
+// Добавляем обработчик события 'click'
+helpBubble.addEventListener('click', () => {
+    // Переключаем класс 'show', чтобы показать/скрыть меню
+    helpMenu.classList.toggle('show');
+});
 
-  const buttons = [
-    { text: 'Что такое Сертификат ?', link: '#' },
-    { text: 'Как получить Сертификат ?', link: '#' },
-    { text: 'Как установить Scarlet ?', link: '#' },
-    { text: 'Как установить Gbox ?', link: '#' },
-    { text: 'Как установить ESign ?', link: '#' },
-  ];
+// Дополнительно: скрываем меню, если кликнуть где-либо еще на странице
+document.addEventListener('click', (event) => {
+    // Проверяем, был ли клик вне кнопки и вне меню
+    const isClickInsideMenu = helpMenu.contains(event.target);
+    const isClickOnButton = helpBubble.contains(event.target);
 
-  buttons.forEach(btn => {
-    const el = document.createElement('a');
-    el.href = btn.link;
-    el.className = 'help-popup-btn';
-    el.textContent = btn.text;
-    popup.appendChild(el);
-  });
-
-  document.body.appendChild(popup);
-
-  helpBubble.addEventListener('click', () => {
-    popup.style.display = popup.style.display === 'none' ? 'flex' : 'none';
-  });
+    if (!isClickInsideMenu && !isClickOnButton && helpMenu.classList.contains('show')) {
+        helpMenu.classList.remove('show');
+    }
 });
