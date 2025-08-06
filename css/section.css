@@ -238,31 +238,31 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 52px;
-  height: 52px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(6px);
-  border: 1.5px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4),
-              0 0 25px rgba(0, 255, 255, 0.3) inset;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(2px); /* уменьшили блюр */
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4); /* мягкое свечение */
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .help-bubble:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.6); /* чуть ярче при наведении */
 }
 
 .question-mark {
   color: #00ffff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
-  text-shadow: 0 0 6px #00ffff, 0 0 12px #00ffff;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
