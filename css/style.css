@@ -12,15 +12,15 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* Чистый фон — без затемнений */
+/* Градиентный фон */
 body {
-  background-image: url('https://raw.githubusercontent.com/bbarne77/ipaworld/main/IMG_7628.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: normal;
-  filter: none !important;
+    background: linear-gradient(135deg, #001f3f, #004080, #0072ff);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: normal;
+    filter: none !important;
 }
 
 /* ===== Шапка ===== */
