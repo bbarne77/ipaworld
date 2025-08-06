@@ -36,9 +36,9 @@
     display: none;
 }
 .card {
-    min-width: 260px;
-    max-width: 260px;
-    height: 200px; /* Увеличил высоту карточки */
+    min-width: 280px; /* Увеличил ширину карточки */
+    max-width: 280px; /* Увеличил ширину карточки */
+    height: 200px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
@@ -84,14 +84,14 @@
 }
 .card-content {
     text-align: center;
-    font-size: 14.5px; /* Уменьшил размер шрифта */
-    line-height: 1.5; /* Увеличенный интерлиньяж */
+    font-size: 14.5px;
+    line-height: 1.5;
     margin: 0;
-    padding: 8px 10px 12px; /* Увеличенные отступы */
+    padding: 8px 10px 12px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 6px;
-    min-height: 70px; /* Добавил минимальную высоту */
-    max-height: 70px; /* Добавил максимальную высоту */
+    min-height: 70px;
+    max-height: 70px;
 }
 
 /* Добавляем стили для выделения текста в описании */
