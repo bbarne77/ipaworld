@@ -225,7 +225,7 @@
   transform: scale(0.96);
 }
 .info-banner-image {
-  width: 120px;
+  width: 220px; /* увеличили ширину */
   height: auto;
   display: block;
   margin: 0 auto 16px;
