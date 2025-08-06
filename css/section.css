@@ -200,16 +200,6 @@
 .info-btn:active {
     transform: scale(0.96);
 }
-.info-banner-image {
-    width: 150px;
-    height: auto;
-    display: block;
-    margin: 0 auto 16px;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
-    animation: fadeInUp 0.8s ease-out forwards;
-    opacity: 0;
-}
 .help-bubble {
     position: fixed;
     bottom: 10px;
