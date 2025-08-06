@@ -236,8 +236,8 @@
 }
 .help-bubble {
   position: fixed;
-  bottom: 10px; /* было 20px — опустили ниже */
-  right: 10px;  /* было 20px — сдвинули правее */
+  bottom: 10px;
+  right: 10px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -251,6 +251,7 @@
   z-index: 1000;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: floatBubble 2.5s ease-in-out infinite; /* 🔹 Анимация подпрыгивания */
 }
 
 .help-bubble:hover {
@@ -264,4 +265,32 @@
   font-weight: bold;
   text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  animation: pulseMark 1.6s ease-in-out infinite; /* 🔹 Пульсация ? */
 }
+@keyframes pulseMark {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  }
+  50% {
+    transform: scale(1.15);
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  }
+}
+
+@keyframes floatBubble {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
