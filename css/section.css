@@ -321,40 +321,61 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
-    padding-top: 100px;
+    padding: 20px; /* Уменьшил общий отступ сверху */
+    display: flex; /* Используем flexbox для центрирования */
+    align-items: center;
+    justify-content: center;
 }
 .info-modal-content {
     background-color: rgba(25, 25, 25, 0.9);
     color: #fff;
     margin: auto;
-    padding: 32px 24px; /* Увеличил верхний и нижний отступы */
+    padding: 20px; /* Уменьшил внутренние отступы */
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px; /* Сделал углы более скруглёнными */
+    border-radius: 16px; /* Немного уменьшил скругление */
     width: 90%;
-    max-width: 500px;
+    max-width: 400px; /* Уменьшил максимальную ширину */
     text-align: center;
     position: relative;
     animation: modalFadeIn 0.3s ease-out;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* Добавил тень для глубины */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    max-height: 90vh; /* Ограничиваем высоту окна, чтобы оно вписывалось в экран */
+    overflow-y: auto; /* Добавляем прокрутку, если контент все-таки не поместится */
 }
 .info-modal-content h3 {
-    font-size: 26px; /* Увеличил размер заголовка */
-    margin-bottom: 20px; /* Увеличил отступ */
+    font-size: 22px; /* Уменьшил размер заголовка */
+    margin-bottom: 12px; /* Уменьшил отступ */
     color: #00e6ff;
-    text-shadow: 0 0 8px rgba(0, 230, 255, 0.5); /* Добавил неоновую тень */
+    text-shadow: 0 0 8px rgba(0, 230, 255, 0.5);
 }
-.info-modal-content p {
-    font-size: 17px; /* Увеличил размер шрифта */
-    line-height: 1.7; /* Увеличил межстрочный интервал для лучшей читаемости */
-    padding: 0 10px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); /* Добавил тень для текста */
+.info-modal-content p, .info-modal-content ul {
+    font-size: 15px; /* Уменьшил размер шрифта основного текста */
+    line-height: 1.5; /* Немного уменьшил межстрочный интервал */
+    text-align: left; /* Выравнивание по левому краю для списков и абзацев */
+}
+.info-modal-content ul {
+    list-style: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+    margin-top: 10px; /* Добавил отступ сверху */
+}
+.info-modal-content ul li {
+    margin-bottom: 8px; /* Отступ между пунктами списка */
+}
+.info-modal-content ul li::before {
+    content: "•"; /* Свой маркер, если нужен */
+    color: #00e6ff; /* Цвет маркера */
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 .info-modal-close-btn {
     color: #aaa;
     position: absolute;
-    top: 15px; /* Немного опустил */
-    right: 25px; /* Сдвинул вправо */
-    font-size: 36px;
+    top: 10px; /* Сдвинул кнопку вверх */
+    right: 15px; /* Сдвинул кнопку влево */
+    font-size: 32px; /* Уменьшил размер кнопки */
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s ease, color 0.2s ease;
@@ -362,7 +383,7 @@
 .info-modal-close-btn:hover,
 .info-modal-close-btn:focus {
     color: #fff;
-    transform: rotate(90deg); /* Добавил анимацию вращения при наведении */
+    transform: rotate(90deg);
     text-decoration: none;
 }
 @keyframes modalFadeIn {
