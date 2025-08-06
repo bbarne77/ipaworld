@@ -311,7 +311,7 @@
 }
 /* 📄 Стили для модального окна */
 .info-modal {
-    display: none;
+    display: none; /* Окно скрыто по умолчанию */
     position: fixed;
     z-index: 2000;
     left: 0;
@@ -321,8 +321,10 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
-    padding: 20px; /* Уменьшил общий отступ сверху */
-    display: flex; /* Используем flexbox для центрирования */
+    padding: 20px;
+}
+.info-modal.active {
+    display: flex; /* Показываем окно и центрируем его только при добавлении класса 'active' */
     align-items: center;
     justify-content: center;
 }
@@ -330,40 +332,40 @@
     background-color: rgba(25, 25, 25, 0.9);
     color: #fff;
     margin: auto;
-    padding: 20px; /* Уменьшил внутренние отступы */
+    padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px; /* Немного уменьшил скругление */
+    border-radius: 16px;
     width: 90%;
-    max-width: 400px; /* Уменьшил максимальную ширину */
+    max-width: 400px;
     text-align: center;
     position: relative;
     animation: modalFadeIn 0.3s ease-out;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    max-height: 90vh; /* Ограничиваем высоту окна, чтобы оно вписывалось в экран */
-    overflow-y: auto; /* Добавляем прокрутку, если контент все-таки не поместится */
+    max-height: 90vh;
+    overflow-y: auto;
 }
 .info-modal-content h3 {
-    font-size: 22px; /* Уменьшил размер заголовка */
-    margin-bottom: 12px; /* Уменьшил отступ */
+    font-size: 22px;
+    margin-bottom: 12px;
     color: #00e6ff;
     text-shadow: 0 0 8px rgba(0, 230, 255, 0.5);
 }
 .info-modal-content p, .info-modal-content ul {
-    font-size: 15px; /* Уменьшил размер шрифта основного текста */
-    line-height: 1.5; /* Немного уменьшил межстрочный интервал */
-    text-align: left; /* Выравнивание по левому краю для списков и абзацев */
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
 }
 .info-modal-content ul {
-    list-style: none; /* Убираем стандартные маркеры списка */
+    list-style: none;
     padding: 0;
-    margin-top: 10px; /* Добавил отступ сверху */
+    margin-top: 10px;
 }
 .info-modal-content ul li {
-    margin-bottom: 8px; /* Отступ между пунктами списка */
+    margin-bottom: 8px;
 }
 .info-modal-content ul li::before {
-    content: "•"; /* Свой маркер, если нужен */
-    color: #00e6ff; /* Цвет маркера */
+    content: "•";
+    color: #00e6ff;
     font-size: 1.2em;
     font-weight: bold;
     display: inline-block;
@@ -373,9 +375,9 @@
 .info-modal-close-btn {
     color: #aaa;
     position: absolute;
-    top: 10px; /* Сдвинул кнопку вверх */
-    right: 15px; /* Сдвинул кнопку влево */
-    font-size: 32px; /* Уменьшил размер кнопки */
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s ease, color 0.2s ease;
