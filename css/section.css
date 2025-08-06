@@ -177,7 +177,7 @@
   }
 }
 .info-banner {
-  max-width: 92%;
+  max-width: 100%;
   margin: 20px auto;
   padding: 16px 20px;
   background: rgba(255, 255, 255, 0.07);
