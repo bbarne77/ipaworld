@@ -155,3 +155,39 @@ document.addEventListener('click', (event) => {
         helpMenu.classList.remove('show');
     }
 });
+
+
+// 🔥 НОВАЯ ЛОГИКА ДЛЯ ПОДТВЕРЖДЕНИЯ ЗАКАЗА 🔥
+
+// Находим все кнопки "Купить"
+const buyButtons = document.querySelectorAll('.card-btn');
+
+// Находим модальное окно подтверждения
+const buyModal = document.getElementById('buyModal');
+const buyModalCloseBtn = buyModal.querySelector('.close-btn');
+const buyModalCancelBtn = buyModal.querySelector('.cancel-btn');
+
+// Открываем модальное окно при клике на "Купить"
+buyButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault(); // Предотвращаем переход по ссылке
+        buyModal.classList.add('active');
+    });
+});
+
+// Закрываем модальное окно при клике на крестик
+buyModalCloseBtn.addEventListener('click', () => {
+    buyModal.classList.remove('active');
+});
+
+// Закрываем модальное окно при клике на "Отмена"
+buyModalCancelBtn.addEventListener('click', () => {
+    buyModal.classList.remove('active');
+});
+
+// Закрываем модальное окно при клике вне его
+window.addEventListener('click', (e) => {
+    if (e.target == buyModal) {
+        buyModal.classList.remove('active');
+    }
+});
