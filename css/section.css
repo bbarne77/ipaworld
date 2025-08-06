@@ -38,7 +38,7 @@
 .card {
     min-width: 260px;
     max-width: 260px;
-    height: 190px;
+    height: 200px; /* Увеличил высоту карточки */
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 20px;
@@ -84,7 +84,7 @@
 }
 .card-content {
     text-align: center;
-    font-size: 15px; /* Увеличенный размер шрифта */
+    font-size: 14.5px; /* Уменьшил размер шрифта */
     line-height: 1.5; /* Увеличенный интерлиньяж */
     margin: 0;
     padding: 8px 10px 12px; /* Увеличенные отступы */
