@@ -97,6 +97,19 @@ body {
   animation: scrollIcons 20s linear infinite;
 }
 
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 480px) {
+  .icon-carousel-container {
+    margin-bottom: 12px;
+  }
+
+  .icon-carousel-image {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+  }
+}
+
 /* Анимация прокрутки */
 @keyframes scrollIcons {
   from {
