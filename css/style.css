@@ -94,7 +94,7 @@ body {
   margin: 0 10px;
   display: inline-block;
   vertical-align: middle;
-  animation: scrollIcons 20s linear infinite;
+  animation: scrollIcons 10s linear infinite; /* Изменено время анимации */
 }
 
 /* Медиа-запрос для мобильных устройств */
@@ -113,9 +113,9 @@ body {
 /* Анимация прокрутки */
 @keyframes scrollIcons {
   from {
-    transform: translateX(0);
+    transform: translateX(0%); /* Изменено начальное значение */
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(100%); /* Изменено конечное значение */
   }
 }
