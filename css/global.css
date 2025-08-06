@@ -1,0 +1,32 @@
+/* Круглая неоновая кнопка-пузырь */
+.help-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5), inset 0 0 10px rgba(0, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.help-bubble:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8), inset 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+.question-mark {
+  font-size: 32px;
+  font-weight: 700;
+  color: #00e6ff; /* Неоново-голубой */
+  text-shadow: 0 0 10px #00e6ff, 0 0 20px #00e6ff;
+  line-height: 1;
+}
