@@ -82,19 +82,19 @@ body {
   margin: 0 auto 16px;
   overflow: hidden;
   position: relative;
-  white-space: nowrap;
+}
+
+.icon-carousel-inner {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  width: max-content; /* Ширина, достаточная для всех иконок и их дубликата */
+  animation: scrollIcons 10s linear infinite; /* Анимация теперь здесь */
 }
 
 .icon-carousel-image {
   width: 50px;
   height: 50px;
   margin: 0 10px;
-  display: inline-block;
-  vertical-align: middle;
-  animation: scrollIcons 10s linear infinite; /* Изменено время анимации */
+  flex-shrink: 0; /* Важно, чтобы иконки не сжимались */
 }
 
 /* Медиа-запрос для мобильных устройств */
@@ -113,9 +113,9 @@ body {
 /* Анимация прокрутки */
 @keyframes scrollIcons {
   from {
-    transform: translateX(0%); /* Изменено начальное значение */
+    transform: translateX(0);
   }
   to {
-    transform: translateX(100%); /* Изменено конечное значение */
+    transform: translateX(-50%); /* Анимируем контейнер на 50% его ширины */
   }
 }
