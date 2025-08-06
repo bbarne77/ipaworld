@@ -226,7 +226,7 @@
 }
 .info-banner-image {
   max-width: 300px; /* ограничение по максимальной ширине */
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
   margin: 0 auto 16px;
