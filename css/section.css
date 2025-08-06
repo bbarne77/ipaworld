@@ -143,18 +143,19 @@
     opacity: 1;
   }
 }
+
 .guarantee-bar {
   width: 100%;
-  height: 28px; /* 1. уменьшили высоту */
+  height: 28px;
   background: #000;
   overflow: hidden;
   position: relative;
-  margin-top: 12px; /* 4. ближе к карточкам */
+  margin-top: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.1);
-  display: flex; /* 3. центрирование по вертикали */
-  align-items: center; /* 3. центрирование по вертикали */
+  display: flex;
+  align-items: center;
 }
 
 .guarantee-text {
@@ -164,7 +165,7 @@
   font-size: 14.5px;
   font-weight: 600;
   padding-left: 100%;
-  color: #00e6ff; /* 2. неоново-голубой цвет */
+  color: #00e6ff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -176,18 +177,19 @@
     transform: translateX(-100%);
   }
 }
+
 .cert-description {
   max-width: 92%;
   margin: 24px auto 12px;
-  padding: 16px 18px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.1); /* светлый полупрозрачный */
-  color: #f2f2f2;
-  font-size: 16px;
-  line-height: 1.8;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: rgba(20, 20, 20, 0.6);
+  color: #f5faff;
+  font-size: 16.2px;
+  line-height: 1.85;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.12);
-  backdrop-filter: blur(8px);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); /* мягкая контрастная тень */
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3), 0 0 8px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
