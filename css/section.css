@@ -234,3 +234,36 @@
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
+.help-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4),
+              0 0 25px rgba(0, 255, 255, 0.3) inset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.help-bubble:hover {
+  transform: scale(1.05);
+}
+
+.question-mark {
+  color: #00ffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00ffff, 0 0 12px #00ffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+
