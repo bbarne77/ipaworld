@@ -4,7 +4,7 @@
 const helpBubble = document.querySelector('.help-bubble');
 const helpMenu = document.getElementById('helpMenu');
 
-// Находим элементы модального окна
+// Находим элементы модального окна с информацией
 const infoModal = document.getElementById('infoModal');
 const infoModalTitle = document.getElementById('infoModalTitle');
 const infoModalText = document.getElementById('infoModalText');
@@ -41,7 +41,7 @@ const infoContent = {
 function showModal(title, text) {
     infoModalTitle.innerHTML = title;
     infoModalText.innerHTML = text;
-    infoModal.style.display = 'block';
+    infoModal.style.display = 'flex';
 }
 
 // Обработчик для кнопки с вопросом
@@ -61,7 +61,7 @@ helpMenuButtons.forEach(button => {
     });
 });
 
-// Обработчик для закрытия модального окна по кнопке
+// Обработчик для закрытия модального окна с информацией
 infoModalCloseBtn.addEventListener('click', () => {
     infoModal.style.display = 'none';
 });
