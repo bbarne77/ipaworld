@@ -162,8 +162,10 @@ document.addEventListener('click', (event) => {
 // Находим все кнопки "Купить"
 const buyButtons = document.querySelectorAll('.card-btn');
 
-// Находим модальное окно подтверждения
+// Находим модальное окно подтверждения и его элементы
 const buyModal = document.getElementById('buyModal');
+const buyModalTitle = buyModal.querySelector('.modal-title');
+const buyModalDescription = buyModal.querySelector('.modal-description');
 const buyModalCloseBtn = buyModal.querySelector('.close-btn');
 const buyModalCancelBtn = buyModal.querySelector('.cancel-btn');
 
@@ -171,6 +173,16 @@ const buyModalCancelBtn = buyModal.querySelector('.cancel-btn');
 buyButtons.forEach(button => {
     button.addEventListener('click', (e) => {
         e.preventDefault(); // Предотвращаем переход по ссылке
+
+        // Получаем данные из атрибутов кнопки
+        const title = button.getAttribute('data-title');
+        const description = button.getAttribute('data-description');
+
+        // Вставляем данные в модальное окно
+        buyModalTitle.textContent = title;
+        buyModalDescription.textContent = description;
+
+        // Показываем модальное окно
         buyModal.classList.add('active');
     });
 });
