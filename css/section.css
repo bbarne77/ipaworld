@@ -225,7 +225,7 @@
   transform: scale(0.96);
 }
 .info-banner-image {
-  width: 160px;
+  width: 120px;
   height: auto;
   display: block;
   margin: 0 auto 16px;
@@ -234,4 +234,3 @@
   animation: fadeInUp 0.8s ease-out forwards;
   opacity: 0;
 }
-
