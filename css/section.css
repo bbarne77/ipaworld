@@ -609,17 +609,15 @@
 /* ===== Футер ===== */
 .site-footer {
   width: 100%;
-  height: 36px; /* ниже чем было */
-  background-color: #000000; /* чисто чёрный */
-  color: #ffffff; /* белый текст */
+  height: 36px;
+  background-color: #000;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.4px;
-  z-index: 998;
+  border-top: 1px solid #222;
   position: relative;
   margin-top: 40px;
-  border-top: 1px solid #222; /* еле заметная граница сверху */
 }
