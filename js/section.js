@@ -22,7 +22,7 @@ const infoContent = {
     'get-certificate': {
         title: 'Инструкция по установке сертификата',
         text: `
-            <ol>
+            <ol style="counter-reset: step-counter;">
                 <li>
                     <strong>Как получить сертификат в боте.</strong>
                     <p>Отправляете <strong>/start</strong> боту. Нажимаете на кнопку "Проверить UDID". После сообщения "Отправьте UDID", вам нужно отправить свой UDID, который вы указывали при оплате сертификата. Нажимаете на кнопку "Получить сертификат [Имя вашего сертификата]". Бот пришлет вам два файла вашего сертификата - <strong>P12</strong> и <strong>Mobileprovision</strong>, а также ссылки для быстрой установки вашего сертификата.</p>
@@ -30,9 +30,9 @@ const infoContent = {
                 <li>
                     <strong>Как сохранить сертификат на устройство.</strong>
                     <p>Когда бот прислал вам два файла сертификата, то вам нужно нажать на один из них. В открывшемся окне нажмите на кнопку, расположенную сверху.</p>
-                    <img src="https://github.com/viibbee/Info/blob/main/cert1.png?raw=true" alt="Шаг 1" style="width:100%; border-radius:8px; margin-top:10px;">
+                    <img src="https://github.com/viibbee/Info/blob/main/cert1.png?raw=true" alt="Шаг 1" style="width:100%; border-radius:8px;">
                     <p>У вас снова откроется окно, в нем выберите кнопку "Сохранить в файлы". Выберите место для сохранения сертификата.</p>
-                    <img src="https://github.com/viibbee/Info/blob/main/cert2.png?raw=true" alt="Шаг 2" style="width:100%; border-radius:8px; margin-top:10px;">
+                    <img src="https://github.com/viibbee/Info/blob/main/cert2.png?raw=true" alt="Шаг 2" style="width:100%; border-radius:8px;">
                     <p>Нажмите на кнопку "Сохранить" слева вверху. Повторите для второго файла сертификата.</p>
                 </li>
             </ol>
@@ -56,7 +56,7 @@ const infoContent = {
 function showModal(title, text) {
     infoModalTitle.innerHTML = title;
     infoModalText.innerHTML = text;
-    infoModal.classList.add('active'); // Добавляем класс 'active'
+    infoModal.classList.add('active');
 }
 
 // Обработчик для кнопки с вопросом
@@ -78,13 +78,13 @@ helpMenuButtons.forEach(button => {
 
 // Обработчик для закрытия модального окна с информацией
 infoModalCloseBtn.addEventListener('click', () => {
-    infoModal.classList.remove('active'); // Удаляем класс 'active'
+    infoModal.classList.remove('active');
 });
 
 // Скрываем модальное окно при клике вне его
 window.addEventListener('click', (event) => {
     if (event.target === infoModal) {
-        infoModal.classList.remove('active'); // Удаляем класс 'active'
+        infoModal.classList.remove('active');
     }
 });
 
