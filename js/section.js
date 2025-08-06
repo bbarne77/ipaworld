@@ -41,7 +41,7 @@ const infoContent = {
 function showModal(title, text) {
     infoModalTitle.innerHTML = title;
     infoModalText.innerHTML = text;
-    infoModal.style.display = 'flex';
+    infoModal.classList.add('active'); // Добавляем класс 'active'
 }
 
 // Обработчик для кнопки с вопросом
@@ -63,13 +63,13 @@ helpMenuButtons.forEach(button => {
 
 // Обработчик для закрытия модального окна с информацией
 infoModalCloseBtn.addEventListener('click', () => {
-    infoModal.style.display = 'none';
+    infoModal.classList.remove('active'); // Удаляем класс 'active'
 });
 
 // Скрываем модальное окно при клике вне его
 window.addEventListener('click', (event) => {
     if (event.target === infoModal) {
-        infoModal.style.display = 'none';
+        infoModal.classList.remove('active'); // Удаляем класс 'active'
     }
 });
 
