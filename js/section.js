@@ -61,7 +61,6 @@ const infoContent = {
         title: 'Как установить ESign?',
         text: 'Инструкция по установке ESign: Donec id elit non mi porta gravida at eget metus.'
     },
-    // 🔥 ОБНОВЛЕННАЯ ИНФОРМАЦИЯ ДЛЯ УСЛОВИЙ ГАРАНТИИ
     'warranty': {
         title: '📝 Условия Гарантии',
         text: `
@@ -172,7 +171,7 @@ document.addEventListener('click', (event) => {
 });
 
 
-// 🔥 ЛОГИКА ДЛЯ ПОДТВЕРЖДЕНИЯ ЗАКАЗА 🔥
+// 🔥 ОБНОВЛЕННАЯ ЛОГИКА ДЛЯ ПОДТВЕРЖДЕНИЯ ЗАКАЗА 🔥
 
 // Находим все кнопки "Купить"
 const buyButtons = document.querySelectorAll('.card-btn');
@@ -183,6 +182,7 @@ const buyModalTitle = buyModal.querySelector('.modal-title');
 const buyModalDescription = buyModal.querySelector('.modal-description');
 const buyModalCloseBtn = buyModal.querySelector('.close-btn');
 const buyModalCancelBtn = buyModal.querySelector('.cancel-btn');
+const confirmBtn = buyModal.querySelector('.confirm-btn'); // Добавляем переменную для кнопки "Подтвердить"
 
 // Открываем модальное окно при клике на "Купить"
 buyButtons.forEach(button => {
@@ -192,10 +192,12 @@ buyButtons.forEach(button => {
         // Получаем данные из атрибутов кнопки
         const title = button.getAttribute('data-title');
         const description = button.getAttribute('data-description');
+        const link = button.getAttribute('data-link'); // Получаем новую ссылку
 
         // Вставляем данные в модальное окно
         buyModalTitle.textContent = title;
         buyModalDescription.textContent = description;
+        confirmBtn.href = link; // Устанавливаем ссылку для кнопки "Подтвердить"
 
         // Показываем модальное окно
         buyModal.classList.add('active');
