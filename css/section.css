@@ -469,7 +469,7 @@
 
 /* 🔥 НОВЫЕ СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА ПОДТВЕРЖДЕНИЯ 🔥 */
 .modal {
-    display: none;
+    display: none; /* УСТАНОВЛЕНО НА 'none' ЧТОБЫ СКРЫТЬ ПО УМОЛЧАНИЮ */
     position: fixed;
     z-index: 3000;
     left: 0;
@@ -479,7 +479,6 @@
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);
-    display: flex;
     align-items: center;
     justify-content: center;
 }
