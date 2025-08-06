@@ -85,16 +85,17 @@ body {
 }
 
 .icon-carousel-inner {
-  display: flex;
-  width: max-content; /* Ширина, достаточная для всех иконок и их дубликата */
-  animation: scrollIcons 10s linear infinite; /* Анимация теперь здесь */
+  width: 200%; /* Увеличиваем ширину, чтобы вместить дубликаты */
+  display: flex; /* Используем flexbox для расположения иконок */
+  animation: scrollIcons 10s linear infinite;
 }
 
 .icon-carousel-image {
   width: 50px;
   height: 50px;
   margin: 0 10px;
-  flex-shrink: 0; /* Важно, чтобы иконки не сжимались */
+  float: left; /* Располагаем иконки в одну строку */
+  flex-shrink: 0;
 }
 
 /* Медиа-запрос для мобильных устройств */
@@ -112,10 +113,10 @@ body {
 
 /* Анимация прокрутки */
 @keyframes scrollIcons {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-50%); /* Анимируем контейнер на 50% его ширины */
+  100% {
+    transform: translateX(-50%); /* Перемещаем контейнер на 50% */
   }
 }
