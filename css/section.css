@@ -1,236 +1,30 @@
-.section-title {
-  margin-top: 72px;
-  text-align: center;
-  animation: fadeInUp 1s ease-out forwards;
-  opacity: 0;
-}
-
-.section-title h2 {
-  display: inline-block;
-  padding: 8px 24px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 12px;
-  font-size: 22px;
-  font-weight: 600;
-  color: #ffffff;
-  background: rgba(0, 0, 0, 0.4);
-  letter-spacing: 0.5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
-}
-
-.card-scroll {
-  margin-top: 20px;
-  padding-left: 24px;
-  padding-right: 16px;
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-padding-left: 24px;
-  gap: 16px;
-  -webkit-overflow-scrolling: touch;
-  animation: fadeInUp 1.3s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.2s;
-}
-
-.card-scroll::-webkit-scrollbar {
-  display: none;
-}
-
-.card {
-  min-width: 260px;
-  max-width: 260px;
-  height: 190px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  scroll-snap-align: start;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 12px 16px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2),
-              inset 0 0 8px rgba(255, 255, 255, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  color: #fff;
-  justify-content: space-between;
-}
-
-.card-header {
+.help-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1.5px solid rgba(0, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2) inset;
+  backdrop-filter: blur(6px);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 8px;
-  position: relative;
-}
-
-.card-header::before,
-.card-header::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.card-header h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin: 0;
-  white-space: nowrap;
-  text-align: center;
-}
-
-/* Контент */
-.card-content {
-  text-align: center;
-  font-size: 14.5px;
-  line-height: 1.4;
-  margin: 0;
-  padding: 4px 6px 8px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-}
-
-/* Footer */
-.card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 6px;
-}
-
-.card-price {
-  font-size: 16px;
-  font-weight: 700;
-  color: #00ff99;
-}
-
-.card-btn {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 13.5px;
-  font-weight: 500;
-  text-decoration: none;
+  cursor: pointer;
+  z-index: 999;
   transition: transform 0.2s ease;
 }
 
-.card-btn svg {
-  width: 16px;
-  height: 16px;
+.help-bubble:hover {
+  transform: scale(1.08);
 }
 
-.card-btn:active {
-  transform: scale(0.96);
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
-.guarantee-bar {
-  width: 100%;
-  height: 28px; /* 1. уменьшили высоту */
-  background: #000;
-  overflow: hidden;
-  position: relative;
-  margin-top: 12px; /* 4. ближе к карточкам */
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.1);
-  display: flex; /* 3. центрирование по вертикали */
-  align-items: center; /* 3. центрирование по вертикали */
-}
-
-.guarantee-text {
-  white-space: nowrap;
-  display: inline-block;
-  animation: scrollText 12s linear infinite;
-  font-size: 14.5px;
-  font-weight: 600;
-  padding-left: 100%;
-  color: #00e6ff; /* 2. неоново-голубой цвет */
+.help-icon {
+  color: #00eaff;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00eaff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-@keyframes scrollText {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.info-banner {
-  max-width: 110%;
-  margin: 20px auto;
-  padding: 16px 20px;
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 14px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
-  text-align: center;
-  color: #e3faff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  animation: fadeInUp 1s ease forwards;
-}
-
-.info-banner .info-text {
-  font-size: 15.5px;
-  line-height: 1.6;
-  margin-bottom: 14px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.info-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.info-btn {
-  padding: 8px 16px;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  transition: transform 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0, 198, 255, 0.25);
-}
-
-.info-btn.alt {
-  background: linear-gradient(135deg, #00ff99, #00c6ff);
-  box-shadow: 0 4px 10px rgba(0, 255, 153, 0.25);
-}
-
-.info-btn:active {
-  transform: scale(0.96);
-}
-.info-banner-image {
-  width: 150px; /* увеличили ширину */
-  height: auto;
-  display: block;
-  margin: 0 auto 16px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
-  animation: fadeInUp 0.8s ease-out forwards;
-  opacity: 0;
 }
