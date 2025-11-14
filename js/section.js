@@ -68,7 +68,7 @@ const infoContent = {
         <p>Наш магазин предоставляет гарантию на все сертификаты:</p>
         <ul>
             <li><strong>Обычный сертификат IPHONE:</strong> 1 месяц</li>
-            <li><strong>Моментальный сертификат IPHONE:</strong> 1 месяц</li>
+            <li><strong>Моментальный сертификат IPHONE:</strong> 3 месяца</li>
             <li><strong>Супермоментальный сертификат IPHONE:</strong> 6 месяцев</li>
             <li><strong>Парный сертификат:</strong> 1 месяц</li>
             <li><strong>Сертификат IPAD:</strong> 1 месяц</li>
