@@ -1,11 +1,11 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>iPAWORLD</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/viibbee/Info/main/IMG_5409.PNG">
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/section.css" />
     <script defer src="js/section.js"></script>
 </head>
 <body>
@@ -21,7 +21,14 @@
             <h2>Сертификаты</h2>
         </section>
 
-        <section class="card-scroll">
+        <div class="mode-switch-container">
+            <div class="switch-wrapper">
+                <button class="switch-btn active" onclick="switchMode('certs')">Сертификаты</button>
+                <button class="switch-btn" onclick="switchMode('vpn')">Наш VPN</button>
+            </div>
+        </div>
+
+        <section class="card-scroll certs">
             <div class="card">
                 <div class="card-content-wrapper">
                     <div class="card-header">
@@ -134,7 +141,32 @@
             </div>
         </section>
 
-        <section class="info-banner">
+        <section class="card-scroll vpn">
+            <div class="card">
+                <div class="card-content-wrapper">
+                    <div class="card-header">
+                        <h3>1 месяц</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Обход глушилок<br>Быстрая скорость<br>YouTube без рекламы<br>Множество серверов</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <span class="card-price">199₽</span>
+                    <a href="#" class="card-btn" data-modal="buy"
+                       data-title="VPN на 1 месяц"
+                       data-description="Обход глушилок. Быстрая скорость. YouTube без рекламы. Доступ к любимому контенту. Множество серверов"
+                        data-link="https://t.me/m/DosJfbKBMjJi">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Купить
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-banner info-certs">
             <div class="icon-carousel-container">
                 <div class="icon-carousel-inner">
                     <img src="https://raw.githubusercontent.com/bbarne77/ipaworld/main/images/IMG_7682.PNG" alt="Icon" class="icon-carousel-image">
@@ -168,18 +200,33 @@
                 Больше новостей на нашем канале.
             </p>
             <div class="info-buttons">
-  <a href="https://t.me/ipaworldd" class="info-btn">Канал Telegram</a>
-  <a href="https://t.me/IPAworldGroup/13" class="info-btn alt">Отзывы</a>
-  <button type="button" class="info-btn" id="openWarrantyBtn">Гарантия</button>
-</div>
+                <a href="https://t.me/ipaworldd" class="info-btn">Канал Telegram</a>
+                <a href="https://t.me/IPAworldGroup/13" class="info-btn alt">Отзывы</a>
+                <button type="button" class="info-btn" id="openWarrantyBtn">Гарантия</button>
+            </div>
         </section>
+
+        <section class="info-banner info-vpn">
+            <p class="info-text">
+                Наш телеграм канал предоставляет <strong>корпоративные сертификаты</strong> для бесплатного временного пользования!<br>
+                Больше новостей на нашем канале.
+            </p>
+            <div class="info-buttons">
+                <a href="https://t.me/ipaworldd" class="info-btn">Канал Telegram</a>
+                <a href="https://t.me/IPAworldGroup/13" class="info-btn alt">Отзывы</a>
+                <div class="info-btn">Статус серверов: <b>Активны</b></div>
+            </div>
+        </section>
+
         <div class="help-bubble">
             <span class="question-mark">?</span>
         </div>
+
         <div class="help-menu" id="helpMenu">
             <a href="#" class="help-menu-btn" data-info="certificate">1. Что такое Сертификат?</a>
             <a href="#" class="help-menu-btn" data-info="warranty">2. Условия Гарантии</a>
         </div>
+
         <div id="infoModal" class="info-modal">
             <div class="info-modal-content">
                 <span class="info-modal-close-btn">&times;</span>
@@ -194,9 +241,8 @@
                 <h3 class="modal-title"></h3>
                 <p class="modal-description"></p>
                 <p class="modal-info">
-                <span>При покупке сертификата вы соглашаетесь с условиями нашей политики и гарантии!</span>
+                <span class="tip">При покупке сертификата вы соглашаетесь с условиями нашей политики и гарантии!</span>
                 <div class="modal-footer">
-
                     <button class="modal-btn cancel-btn">Отмена</button>
                     <a href="https://t.me/your_bot_link" class="modal-btn confirm-btn">Подтвердить</a>
                 </div>
@@ -206,7 +252,39 @@
     </main>
  <!-- ✅ Добавлен футер -->
     <footer class="site-footer">
-        <p>© 2025 IPAWORLD</p>
+        <p>© 2026 IPAWORLD</p>
     </footer>
+
+    <script>
+        function switchMode(mode) {
+            const headerText = document.querySelector('.section-title h2');
+            const btns = document.querySelectorAll('.switch-btn');
+            const certsSec = document.querySelector('.certs');
+            const vpnSec = document.querySelector('.vpn');
+            const cardText = document.querySelector('.modal-content .tip');
+            const certsInfoSec = document.querySelector('.info-certs');
+            const vpnInfoSec = document.querySelector('.info-vpn');
+
+            btns.forEach(btn => btn.classList.remove('active'));
+            
+            if (mode === 'certs') {
+                headerText.innerHTML = 'Сертификаты';
+                btns[0].classList.add('active');
+                certsSec.style.display = "flex";
+                vpnSec.style.display = "none";
+                cardText.innerHTML = 'При покупке сертификата вы соглашаетесь с условиями нашей политики и гарантии!';
+                certsInfoSec.style.display = "block";
+                vpnInfoSec.style.display = "none";
+            } else {
+                headerText.innerHTML = 'WorldNet VPN';
+                btns[1].classList.add('active');
+                certsSec.style.display = "none";
+                vpnSec.style.display = "flex";
+                cardText.innerHTML = 'При покупке VPN вы соглашаетесь с условиями нашей политики и гарантии!';
+                certsInfoSec.style.display = "none";
+                vpnInfoSec.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
